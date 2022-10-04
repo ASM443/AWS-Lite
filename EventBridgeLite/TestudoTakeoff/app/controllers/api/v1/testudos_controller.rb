@@ -12,9 +12,10 @@ module Api
 
             def show
                 testudos = Testudo.where(buildingName: params[:id].capitalize)
+                response = isTestHere
                 render json: {status: 'SUCCESS', 
-                    message: 'Here you go!1',
-                    data: testudos              
+                    message: response,
+                    data: response              
             }
             end
             # 1 Check if Testudo is in building
@@ -22,7 +23,24 @@ module Api
             #   If false return riddle of nearby building with testudo
 
             
-            
+            def isTestHere
+                building = params[:id].capitalize
+                currentbuilding = Testudo.find {|x| x.buildingName == building}
+                currentRegion = currentbuilding.region
+                buldingsRegion = []
+
+                if(!currentbuilding.testudoPresnt)
+                    Testudo.all.each do |x|
+                        if(x.region == currentRegion)
+                            buldingsRegion.push(x.buildingName)
+                        end
+                    end
+                    return "Maybe take a peek at " + buldingsRegion.sample       
+                end
+
+                return "There may be a Testudo at " + building
+                
+            end
 
         end
     end

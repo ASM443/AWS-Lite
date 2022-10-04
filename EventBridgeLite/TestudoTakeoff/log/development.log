@@ -549,3 +549,193 @@ Processing by Api::V1::TestudosController#index as */*
 Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 130)
 
 
+  [1m[36mTestudo Load (39.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos" WHERE "testudos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos" WHERE "testudos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.9ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+Started GET "/api/v1/testudos/" for 127.0.0.1 at 2022-10-04 04:05:25 -0400
+  
+SyntaxError (/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:31: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+...    if(currentbuilding == nil){
+...                              ^
+/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:33: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+...urrentRegion == currentRegion){
+...                              ^
+/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:35: syntax error, unexpected '}', expecting `end'
+                        }
+                        ^
+/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:40: syntax error, unexpected '}', expecting `end'
+                } else {
+                ^
+/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:41: void value expression
+                    return "There may be a Testudo at "...
+                    ^~~~~~
+/home/andrew/AWS/AWS-Lite/EventBridgeLite/TestudoTakeoff/app/controllers/api/v1/testudos_controller.rb:42: syntax error, unexpected '}', expecting `end'
+                }
+                ^
+):
+  
+app/controllers/api/v1/testudos_controller.rb:31: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+app/controllers/api/v1/testudos_controller.rb:33: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+app/controllers/api/v1/testudos_controller.rb:35: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/testudos_controller.rb:40: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/testudos_controller.rb:41: void value expression
+app/controllers/api/v1/testudos_controller.rb:42: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/testudos_controller.rb:31: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+app/controllers/api/v1/testudos_controller.rb:33: syntax error, unexpected '{', expecting `then' or ';' or '\n'
+app/controllers/api/v1/testudos_controller.rb:35: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/testudos_controller.rb:40: syntax error, unexpected '}', expecting `end'
+app/controllers/api/v1/testudos_controller.rb:41: void value expression
+app/controllers/api/v1/testudos_controller.rb:42: syntax error, unexpected '}', expecting `end'
+Started GET "/api/v1/testudos/" for 127.0.0.1 at 2022-10-04 04:08:25 -0400
+Processing by Api::V1::TestudosController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 131)
+
+
+Started GET "/api/v1/testudos/Toll" for 127.0.0.1 at 2022-10-04 04:08:32 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Toll"}
+  [1m[36mTestudo Load (0.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos" WHERE "testudos"."buildingName" = ?[0m  [["buildingName", "Toll"]]
+  ↳ app/controllers/api/v1/testudos_controller.rb:15:in `show'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.5ms | Allocations: 3138)
+
+
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:08:41 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos" WHERE "testudos"."buildingName" = ?[0m  [["buildingName", "Tawes"]]
+  ↳ app/controllers/api/v1/testudos_controller.rb:15:in `show'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 842)
+
+
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:09:42 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 1.2ms | Allocations: 3878)
+
+
+Started GET "/api/v1/testudos/Toll" for 127.0.0.1 at 2022-10-04 04:09:55 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Toll"}
+  [1m[36mTestudo Load (0.3ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1353)
+
+
+Started GET "/api/v1/testudos/Toll" for 127.0.0.1 at 2022-10-04 04:12:43 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Toll"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 3848)
+
+
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:12:48 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1380)
+
+
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:14:31 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.2ms | Allocations: 5937)
+
+
+  
+NoMethodError (undefined method `currentRegion' for #<Testudo:0x00007fb7ec4d83b0>):
+  
+app/controllers/api/v1/testudos_controller.rb:33:in `block in isTestHere'
+app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+app/controllers/api/v1/testudos_controller.rb:16:in `show'
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:14:52 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.4ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.6ms | Allocations: 6216)
+
+
+  
+NoMethodError (undefined method `Region' for #<Testudo:0x00007fb7e8cc79f8>
+Did you mean?  region?
+               region=):
+  
+app/controllers/api/v1/testudos_controller.rb:33:in `block in isTestHere'
+app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+app/controllers/api/v1/testudos_controller.rb:16:in `show'
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:15:03 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:27:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:32:in `isTestHere'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 4906)
+
+
+Started GET "/api/v1/testudos/Tawes" for 127.0.0.1 at 2022-10-04 04:15:54 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tawes"}
+  [1m[36mTestudo Load (0.1ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:28:in `isTestHere'
+  [1m[36mCACHE Testudo Load (0.0ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:33:in `isTestHere'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 3841)
+
+
+Started GET "/api/v1/testudos/Toll" for 127.0.0.1 at 2022-10-04 04:16:02 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Toll"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:28:in `isTestHere'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 819)
+
+
+Started GET "/api/v1/testudos/Tolls" for 127.0.0.1 at 2022-10-04 04:16:07 -0400
+Processing by Api::V1::TestudosController#show as */*
+  Parameters: {"id"=>"Tolls"}
+  [1m[36mTestudo Load (0.2ms)[0m  [1m[34mSELECT "testudos".* FROM "testudos"[0m
+  ↳ app/controllers/api/v1/testudos_controller.rb:28:in `isTestHere'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 1298)
+
+
+  
+NoMethodError (undefined method `region' for nil:NilClass):
+  
+app/controllers/api/v1/testudos_controller.rb:29:in `isTestHere'
+app/controllers/api/v1/testudos_controller.rb:15:in `show'
