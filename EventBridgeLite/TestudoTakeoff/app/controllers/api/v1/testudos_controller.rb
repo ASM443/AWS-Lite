@@ -2,33 +2,46 @@ module Api
     module V1
         class TestudosController < ApplicationController
             def index
-            
-                testudos = Testudo.order('created_at DESC');
                 render json: {status: 'SUCCESS', 
-                              message: 'Here you go!',
-                              data: testudos              
+                              message: 'No cheating',
+                              data: nil              
                 }
                 
             end
 
 
             def show
-                check(params[:id].capitalize)
                 testudos = Testudo.where(buildingName: params[:id].capitalize)
+                response = isTestHere
                 render json: {status: 'SUCCESS', 
-                    message: 'Here you go!',
-                    data: testudos              
+                    message: response,
+                    data: response              
             }
             end
 
-            def check (buildN)
-                if buildN.pluck :testudoPresnt
-                    render json: {status: 'SUCCESS', 
-                        message: 'Here you go!',
-                        data: buildN
-                    }
+            
+            #   Check if Testudo is in building
+            #   If true return true
+            #   If false return riddle of nearby building with testudo     
+            def isTestHere
+                building = params[:id].capitalize
+                currentbuilding = Testudo.find {|x| x.buildingName == building}
+                currentRegion = currentbuilding.region
+                buldingsRegion = []
+
+                if(!currentbuilding.testudoPresnt)
+                    Testudo.all.each do |x|
+                        if(x.region == currentRegion)
+                            buldingsRegion.push(x.buildingName)
+                        end
+                    end
+                    return "Maybe take a peek at " + buldingsRegion.sample       
                 end
+
+                return "There may be a Testudo at " + building
+                
             end
+
         end
     end
 
