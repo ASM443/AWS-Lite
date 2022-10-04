@@ -18,11 +18,11 @@ module Api
                     data: response              
             }
             end
-            # 1 Check if Testudo is in building
-            #   If true return true
-            #   If false return riddle of nearby building with testudo
 
             
+            #   Check if Testudo is in building
+            #   If true return true
+            #   If false return riddle of nearby building with testudo     
             def isTestHere
                 building = params[:id].capitalize
                 currentbuilding = Testudo.find {|x| x.buildingName == building}
